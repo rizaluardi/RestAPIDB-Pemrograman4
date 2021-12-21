@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".EditActivityAlamat">
+
+    <TextView
+        android:id="@+id/tvIdAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Alamat : "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:layout_below="@id/tvIdAlamat"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvKodepos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kodepos : "
+        android:layout_below="@id/tvAlamat"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtIdAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:layout_toRightOf="@+id/tvIdAlamat"
+        android:layout_alignBaseline="@+id/tvIdAlamat"/>
+
+    <EditText
+        android:id="@+id/edtAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:layout_alignBaseline="@+id/tvAlamat"
+        android:layout_alignLeft="@+id/edtIdAlamat"/>
+
+    <EditText
+        android:id="@+id/edtKodepos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Kodepos"
+        android:layout_alignBaseline="@+id/tvKodepos"
+        android:layout_alignLeft="@+id/edtIdAlamat"
+        android:inputType="date"/>
+
+    <LinearLayout
+        android:id="@+id/LinearlayoutAlamat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvKodepos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btUpdateAlamat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btDeleteAlamat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/btBackGoAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+    </LinearLayout>
+</RelativeLayout>

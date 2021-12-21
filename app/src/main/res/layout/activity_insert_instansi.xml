@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert_instansi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".InsertActivityInstansi">
+    <TextView
+        android:id="@+id/tvInstansi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instansi : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvTelepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telepon : "
+        android:layout_below="@id/tvInstansi"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtInstansi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Instansi"
+        android:layout_toRightOf="@+id/tvInstansi"
+        android:layout_alignBaseline="@+id/tvInstansi"/>
+    <EditText
+        android:id="@+id/edtTelepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Telepon"
+        android:layout_toRightOf="@+id/tvTelepon"
+        android:layout_alignBaseline="@+id/tvTelepon"/>
+    <LinearLayout
+        android:id="@+id/LinearlayoutInstansi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvTelepon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btInsertingInstansi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btBackGoInstansi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+</RelativeLayout>
